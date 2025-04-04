@@ -1,0 +1,8 @@
+// flutter 웹 프로젝트 생성
+flutter create my_web_app
+
+// flutter 테스트 실행 
+flutter run -d chrome
+
+// flutter 웹 빌드
+flutter build web
