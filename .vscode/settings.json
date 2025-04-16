@@ -1,3 +1,4 @@
 {
-    "dart.sdkPath": "~/flutter/bin/cache/dart-sdk"
+    "dart.sdkPath": "~/flutter/bin/cache/dart-sdk",
+    "cmake.sourceDirectory": "/Users/jonayeon/git/tomaCre/my_web_app/linux"
 }

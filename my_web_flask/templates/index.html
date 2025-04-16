@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>이미지 합성 웹</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>두 이미지를 업로드하여 합성하기</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image1" required><br>
+        <input type="file" name="image2" required><br>
+        <input type="submit" value="합성하기">
+    </form>
+
+    {% if output_image %}
+        <h2>결과 이미지:</h2>
+        <img src="{{ url_for('output_file', filename=output_image) }}" alt="합성 결과">
+    {% endif %}
+</body>
+</html>

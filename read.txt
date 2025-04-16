@@ -6,3 +6,19 @@ flutter run -d chrome
 
 // flutter 웹 빌드
 flutter build web
+
+
+image_webapp/
+├── app.py                      # Flask 진입점
+├── config.py                  # 환경 설정 파일 (선택사항)
+├── static/                    # 정적 파일 (CSS, JS, 이미지)
+│   ├── style.css
+│   └── script.js
+├── templates/                 # HTML 템플릿
+│   └── index.html
+├── uploads/                   # 사용자 업로드 이미지 저장 폴더
+├── outputs/                   # 합성된 이미지 저장 폴더
+├── model/                     # 이미지 합성 모델 관련 모듈
+│   └── synth_model.py         # 합성 로직 정의
+└── utils/
+    └── image_utils.py         # 이미지 처리 관련 유틸 함수
